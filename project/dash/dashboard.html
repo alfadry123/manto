@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            background-color: #CCEEFF;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            background-color: #F0F0F0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .box h2 {
+            margin-top: 0;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table th, .table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .table th {
+            background-color: #F0F0F0;
+        }
+
+        .button {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin</h1>
+
+        <div class="box">
+            <h2>Jumlah Postingan</h2>
+            <p>5</p>
+        </div>
+
+        <div class="box">
+            <h2>Jumlah Komentar</h2>
+            <p>20</p>
+        </div>
+
+        <div class="box">
+            <h2>Jumlah Pengunjung</h2>
+            <p>100</p>
+        </div>
+
+        <div class="box">
+            <h2>Daftar Postingan</h2>
+            <table class="table">
+                <tr>
+                    <th>Title</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Postingan 1</td>
+                    <td>
+                        <button class="button">Edit</button>
+                        <button class="button">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Postingan 2</td>
+                    <td>
+                        <button class="button">Edit</button>
+                        <button class="button">Delete</button>
+                    </td>
+                </tr>
+                <!-- Add more rows here -->
+            </table>
+        </div>
+
+        <div class="box">
+            <h2>Tambah Postingan Baru</h2>
+            <form>
+                <input type="text" placeholder="Title">
+                <textarea placeholder="Content"></textarea>
+                <button class="button">Tambah</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
